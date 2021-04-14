@@ -1,7 +1,20 @@
 .App {
   text-align: center;
+  
+  
 }
-
+/* .List{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+margin: 80px;
+  
+} */
+.card :hover{
+background: #e6e7e7;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,25 +27,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: #117a8b;
+   height: 150px; 
+   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; 
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.nav{
+width: 100%;
+margin: 0%;
+}
+.col{
+  background-color: cornsilk !important;
+  color: #032668;
+}
+.rech{
+  height:40px ;
+  width:400px ;
 }
