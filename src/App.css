@@ -55,3 +55,11 @@ margin: 0%;
   height:40px ;
   width:400px ;
 }
+.desc h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  text-align: center;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 30px;
+}

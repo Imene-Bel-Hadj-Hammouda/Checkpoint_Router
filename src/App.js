@@ -29,12 +29,12 @@ function App() {
         <Navbar className="col"/>
         <BrowserRouter>
         <Filter setftext={setFtext} setfrate={setFrate}/>
+        <Route path="/description/:id" render={(props) =><Description {...props} movies={movies}/> }/>
         <MovieList
            deleteMovie={deleteMovie} 
           movies={movies.filter((el) => el.title.toLowerCase().trim().includes(ftext.toLowerCase().trim()) && el.rate >= frate)}
         />
         <AddMovie addMovie={addMovie} />
-        <Route path="/description/id" render={(props) =><Description {...props} movies={movies}/> }/>
         </BrowserRouter>
        {/* </header>  */}
     </div>
