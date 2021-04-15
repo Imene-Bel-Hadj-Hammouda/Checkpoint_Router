@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useState, useEffect } from "react";
 function Description(props) {
 
@@ -9,7 +10,13 @@ function Description(props) {
         <div className="desc">
             
            { movie && <h1>{movie.description} </h1> }
-           <iframe width="560" height="315" src={props.movie.thrailer} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           {movie ? (
+           <iframe width="560" height="315" src={movie.thrailer} title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture" allowfullscreen></iframe>
+           ) : (
+               <></>
+           )}
         </div>
     )
 }
